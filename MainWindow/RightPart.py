@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import (QWidget, QGridLayout,
-                             QPushButton, QApplication, QVBoxLayout, QLabel, QFrame)
+                             QPushButton, QApplication, QVBoxLayout, QLabel, QFrame, QTableWidget)
 
 from MainWindow.OutputPart import OutputPart
 
@@ -13,7 +13,6 @@ class RightPart(QFrame):
     def initUI(self):
         grid = QVBoxLayout()
         self.setLayout(grid)
-
         grid.addWidget(OutputPart())
 
 

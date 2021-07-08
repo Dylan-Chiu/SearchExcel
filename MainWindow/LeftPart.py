@@ -2,7 +2,7 @@ import sys
 from PyQt5.QtWidgets import (QWidget, QGridLayout,
                              QPushButton, QApplication, QVBoxLayout, QLabel, QFrame)
 
-from MainWindow.InputPart import InputPart
+from MainWindow.StartPart import StartPart
 from MainWindow.PreviewPart import PreviewPart
 
 
@@ -14,6 +14,6 @@ class LeftPart(QFrame):
     def initUI(self):
         grid = QVBoxLayout()
         self.setLayout(grid)
-        grid.addWidget(InputPart())
+        grid.addWidget(StartPart())
         grid.addWidget(PreviewPart())
 
