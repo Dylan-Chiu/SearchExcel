@@ -19,8 +19,3 @@ def findCellInExcel(path, key):
                 if (TcellStr.find(key) > 0):
                     result.append(cell(path, cellStr, sheetId, rowId, colId))
     return result
-
-if __name__ == '__main__':
-    res = findCellInExcel('E:\实践委员综测加分证明.xlsx', '邱泉')
-    for i in res:
-        print(i)

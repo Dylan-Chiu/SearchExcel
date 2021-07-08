@@ -9,6 +9,7 @@ from MainWindow.LeftPart import LeftPart
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = QWidget()
+    window.showMaximized()
     window.show()
 
     # 创建左右大盒子

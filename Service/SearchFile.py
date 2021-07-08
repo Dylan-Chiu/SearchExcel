@@ -24,8 +24,3 @@ def findAllCellInAllExcel(target_dir, key):
         cellList = findCellInExcel(file, key)
         result.extend(cellList)
     return result
-
-if __name__ == '__main__':
-    result = findAllCellInAllExcel('E:\Chrome下载内容', '邱泉')
-    for i in result:
-        print(i)
