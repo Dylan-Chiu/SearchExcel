@@ -14,6 +14,8 @@ class StartPart(QFrame):
     def initUI(self):
         grid = QVBoxLayout()
         self.setLayout(grid)
-        self.setStyleSheet("background-color: rgb(200,200,200);")
-        grid.addWidget(InputPart())
-        grid.addWidget(OKPart())
+        self.setStyleSheet("background-color: rgb(230,230,230);")
+        self.OKPart = OKPart()
+        self.inputPart = InputPart()
+        grid.addWidget(self.inputPart)
+        grid.addWidget(self.OKPart)

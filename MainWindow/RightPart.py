@@ -13,6 +13,7 @@ class RightPart(QFrame):
     def initUI(self):
         grid = QVBoxLayout()
         self.setLayout(grid)
-        grid.addWidget(OutputPart())
+        self.outputPart = OutputPart()
+        grid.addWidget(self.outputPart)
 
 

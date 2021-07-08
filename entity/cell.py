@@ -1,6 +1,6 @@
 class cell:
     def __init__(self, fileName, context, sheetId, rowId, colId):
-        self.fileName = fileName
+        self.fileName = fileName.replace("/", '\\')
         self.context = context
         self.sheetId = sheetId
         self.rowId = rowId

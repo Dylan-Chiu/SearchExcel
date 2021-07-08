@@ -14,6 +14,8 @@ class LeftPart(QFrame):
     def initUI(self):
         grid = QVBoxLayout()
         self.setLayout(grid)
-        grid.addWidget(StartPart())
-        grid.addWidget(PreviewPart())
+        self.previewPart = PreviewPart()
+        self.startPart = StartPart()
+        grid.addWidget(self.startPart)
+        grid.addWidget(self.previewPart)
 
